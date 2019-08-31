@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number 1</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+function returnBiodata() {
+	// string
+	var name;
+	// number
+	var age;
+	// string
+	var address;
+	// array
+	var hobbies;
+	// boolean
+	var is_married;
+	// array of object
+	var list_school;
+	// array of object
+	var skills;
+	// boolean
+	var interest_in_coding;
+
+	var biodata;
+
+
+	name = "Qodri Ahmad Khalik";
+	age = 17;
+	address = "jl.Guru Suman, gg.Lengkio No.16";
+	hobbies = ["gaming","masak","hiking"];
+	is_married = false;
+	list_school = 
+	[{	
+
+		"name" : "SD Muhammadiyah 02",
+	  	"year_in" : 2007,
+	  	"year_out" : 2011,
+	  	"major" : 'null'
+	},
+
+	{
+		"name" :"SD Al-Mukmin",
+	  	"year_in" : 2011,
+	  	"year_out" : 2013,
+	  	"major" : null
+	},
+
+	{
+		"name" :"SMP IT Al-Hijrah",
+	  	"year_in" : 2003,
+	  	"year_out" : 2016,
+	  	"major" : null
+	},
+
+	{
+		"name" :"SMK Tritech Informatika",
+	  	"year_in" : 2016,
+	  	"year_out" : 2019,
+	  	"major" : "Rekayasa Perangkat Lunak"
+	}
+];
+
+ 	skills = 
+ 	
+ 	{"skill_name" : "programming",
+ 	 "level" : "beginner"};
+
+ 	interest_in_coding = true;
+
+ 	biodata = "nama : " +name+", "+"usia : "+age+", "+"alamat : " +address+", "+"hobi : "+hobbies+", "+"sudah menikah : "+is_married+", "+"list sekolah : "+list_school[0]["name"]+", "
+ 		+"tahun masuk : "+list_school[0]["year_in"]+", "
+ 		+"tahun keluar : "+list_school[0]["year_out"]+", "
+ 		+"jurusan : "+list_school[0]["major"]+", "+
+
+ 		list_school[1]["name"]+", "
+ 		+"tahun masuk : "+list_school[1]["year_in"]+", "
+ 		+"tahun keluar : "+list_school[1]["year_out"]+", "
+ 		+"jurusan : "+list_school[1]["major"]+", "+
+
+ 		list_school[2]["name"]+", "
+ 		+"tahun masuk : "+list_school[2]["year_in"]+", "
+ 		+"tahun keluar : "+list_school[2]["year_out"]+", "
+ 		+"jurusan : "+list_school[2]["major"]+", "+
+
+ 		list_school[3]["name"]+", "
+ 		+"tahun masuk : "+list_school[3]["year_in"]+", "
+ 		+"tahun keluar : "+list_school[3]["year_out"]+", "
+ 		+"jurusan : "+list_school[3]["major"]+", "
+
+
+
+ 		+"Kemampuan : "+skills.skill_name+", "+"Level : "+skills.level+", "+"tertarik ngoding : "+interest_in_coding;
+
+ 	return biodata;
+
+}
+
+
+alert(returnBiodata());
+
+</script>
+</body>
+</html>
